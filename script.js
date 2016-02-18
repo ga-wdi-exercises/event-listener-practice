@@ -1,5 +1,7 @@
-div.eventListener("click", changeBackgroundColorToBlue());
-div.eventListener("click", changeBackgroundColorToWhite());
+div = document.querySelector("div");
+
+div.addEventListener("click", changeBackgroundColorToBlue);
+div.addEventListener("click", changeBackgroundColorToWhite);
 
 function changeBackgroundColorToBlue(){
   // No need to change the content of this function. Don't worry if this code is new to you.
