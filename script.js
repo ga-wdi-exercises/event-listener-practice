@@ -1,14 +1,14 @@
-div = document.querySelector("div");
+var div = $("div");
 
-div.addEventListener("mouseover", changeBackgroundColorToBlue);
-div.addEventListener("mouseout", changeBackgroundColorToWhite);
+div.on("mouseover", changeBackgroundColorToBlue);
+div.on("mouseout", changeBackgroundColorToWhite);
 
 function changeBackgroundColorToBlue(){
   // No need to change the content of this function. Don't worry if this code is new to you.
-  document.body.style.backgroundColor = "blue";
+  $("body").css("background", "blue");
 }
 
 function changeBackgroundColorToWhite(){
   // No need to change the content of this function. Don't worry if this code is new to you.
-  document.body.style.backgroundColor = "white";
+  $("body").css("background", "white");
 }
