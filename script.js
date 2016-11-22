@@ -1,5 +1,5 @@
-div.onclick(changeBackgroundColorToBlue());
-div.onclick(changeBackgroundColorToWhite());
+$('div').on('click', changeBackgroundColorToBlue);
+$('div').hover(changeBackgroundColorToWhite);
 
 function changeBackgroundColorToBlue(){
   // No need to change the content of this function. Don't worry if this code is new to you.
